@@ -12,9 +12,6 @@ const config: HardhatUserConfig = {
       accounts: [`0x${PRIVATE_KEY}`],
     },
   },
-  etherscan: {
-    apiKey: `${ETHERSCAN_KEY}`,  
-  },
   sourcify: {
     enabled: false,
   },
