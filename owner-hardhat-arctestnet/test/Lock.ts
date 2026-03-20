@@ -19,7 +19,7 @@ describe("Lock", function () {
 
     // Contracts are deployed using the first signer/account by default
     const [owner, otherAccount] = await hre.ethers.getSigners();
-
+    
     const Lock = await hre.ethers.getContractFactory("Lock");
     const lock = await Lock.deploy(unlockTime, { value: lockedAmount });
 
